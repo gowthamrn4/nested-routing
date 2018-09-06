@@ -1,0 +1,19 @@
+.container
+{
+    background:orange;
+}
+h6{
+    color:white;
+}
+a{
+    padding: 20px;
+    color:white;
+}
+.active {
+    background:red;
+    border:4px solid orangered;
+	color:white;
+}
+li{
+    display: inline;
+}

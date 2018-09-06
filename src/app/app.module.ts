@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Router, RouterModule } from '@angular/router'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { EduAppModule } from './education/edu.app.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -15,6 +16,7 @@ import { LanComponent } from './lan/lan.component';
 import { AddressComponent } from './address/address.component';
 import { FnameComponent } from './fname/fname.component';
 import { LnameComponent } from './lname/lname.component';
+import { EducationComponent } from './education/education.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +29,12 @@ import { LnameComponent } from './lname/lname.component';
     LanComponent,
     AddressComponent,
     FnameComponent,
-    LnameComponent
+    LnameComponent,
+    // EducationComponent,
   ],
   imports: [
     BrowserModule,
+    EduAppModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
@@ -40,6 +44,7 @@ import { LnameComponent } from './lname/lname.component';
       { path:'',pathMatch:'full',redirectTo:'home'},
       { path:'home',component:HomeComponent},
       { path:'profile',component:ProfileComponent},
+      { path:'education',component:EducationComponent},
       { path:'details',component:DetailsComponent,
     children:([
       { path:'',pathMatch:'full',redirectTo:'name'},
