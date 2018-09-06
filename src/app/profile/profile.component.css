@@ -1,0 +1,11 @@
+.container
+{
+    background:orange;
+    color:white;
+}
+.detail
+{
+    padding:30px;
+    margin:20px auto;
+    background:gray;
+}

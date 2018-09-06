@@ -1,0 +1,33 @@
+
+li{
+    display:inline;
+    padding:20px;
+    background:orangered;
+    color:white;
+}
+ul{
+    margin:20px;
+}
+.menu
+{
+    margin:10px auto;
+    padding:20px;
+    color:white;
+}
+a{
+    color:white;
+    text-shadow:10px black;
+}
+li:hover{
+    background:orange;
+    border:4px solid orangered;
+}
+.container
+{
+    background:orange;
+}
+.active {
+    background:red;
+    border:4px solid orangered;
+	
+}
